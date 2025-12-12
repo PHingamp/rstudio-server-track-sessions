@@ -1,0 +1,2 @@
+#!/bin/sh
+exec python3 /path/to/track_rstudio_sessions2.py
