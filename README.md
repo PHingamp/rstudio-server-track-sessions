@@ -4,7 +4,7 @@ A python script to keep track of user RStudio sessions from within a
 
 The [RStudio Server Open Source edition](https://posit.co/download/rstudio-server/) is brilliant, but comes with all the auditing functions disabled (enabled I understand if you buy a licence for the Workbench version). Fair enough, POSIT devs actually need to eat too.
 
-If you have many users, such as large student cohorts, it can nonetheless be useful to keep track of the rstudio sessions : historical list, and overall session durations and numbers.
+If you have many users, such as large student cohorts, it can nonetheless be useful to keep track of the rstudio sessions : historical list, and overall session durations and numbers. Oh, while I'm at it, there's a really cool not so advertized script to automate creating large user cohorts at `/rocker_scripts/experimental/batch_user_creation.sh`.
 
 This Python script uses the process list `ps aux` inside the docker container to track and record rstudio sessions, storing the data in a sqlite3 database file. Storing this database file in a persistent container volume will ensure the stats don't get reset after a container rebuild. The Python script is deamonized using the container s6 supervision, so it should be pretty robust, and doesn't require any additional packages on a [rocker](https://rocker-project.org/) based RStudio Server container.
 
