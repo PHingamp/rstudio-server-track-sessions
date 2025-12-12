@@ -1,8 +1,8 @@
-# rstudio-server-track-sessions
+# RStudio Server : track user sessions
 A python script to keep track of user RStudio sessions from within a 
 [rocker](https://rocker-project.org/) based docker container.
 
-The [RStudio Server Open Source edition](https://posit.co/download/rstudio-server/) is brilliant, but comes with all the auditing functions disabled. Fair enough, POSIT devs actually need to eat too.
+The [RStudio Server Open Source edition](https://posit.co/download/rstudio-server/) is brilliant, but comes with all the auditing functions disabled (enabled I understand if you buy a licence for the Workbench version). Fair enough, POSIT devs actually need to eat too.
 
 If you have many users, such as large student cohorts, it can nonetheless be useful to keep track of the rstudio sessions : historical list, and overall session durations and numbers.
 
