@@ -23,3 +23,5 @@ Mount some persistent volume, and then either via a `post_start` script in your 
  You're done !
  
  Every minute, processes are scanned and stats are updated in the sqlite3 database file.
+
+![Screenshot](Screenshot.png)
